@@ -1,0 +1,32 @@
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background:  rgb(0 0 0 0.92);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.lightbox:active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 8px;
+}
+
+.lightbox p {
+    margin-top: 12px;
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size:  2.5rem;
+    cursor:  pointer;
+}
